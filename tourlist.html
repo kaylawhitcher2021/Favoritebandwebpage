@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Your name goes here">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title>Tour List | Eric Church</title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/26.jpeg">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+
+<body>
+
+	<header class="clearfix">
+		<a href="index.html"><img src=images/10.jpeg></a>
+		<h1><a href="index.html">Tour List 2021</a></h1>
+	</header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="discography.html">Discography</a></li>
+        	<li><a href="videos.html">Videos</a></li>
+        	<li><a href="gallery.html">Gallery</a></li>
+        	<li><a href="tourlist.html">Tour List</a></li>
+    	</ul>
+	</nav>
+
+	<div id="homepageintro">
+		
+	</div>
+
+	<section style="width: 100%;">
+
+		<div>
+			<img src="images/19.jpeg" width=800px; style="display: block; margin: 0 auto;"><br><br><br><br>
+		</div>
+
+		<div><h4>Tour List</h4>
+			<div id="TourList">
+				
+					<li>6.4-Durant, OK</li>
+					<li>9.17-Lexington, KY</li>
+					<li>9.18-Columbus, OH</li>
+					<li>9.24-Cleveland OH</li>
+					<li>9.25-Bufflo NY</li>
+					<li>10.2-Winnipeg, </li>
+					<li>10.8-Pittsburg, PA</li>
+					<li>10.15-Denver, CO</li>
+					<li>10.22-Calgary, AB</li>
+					<li>10.29-Vancouver, BC</li>
+					<li>10.30-Seattle, WA</li>
+					<li>11.12-Knoxville, TN</li>
+					<li>11.13-Evansville, TNS </li>
+					
+
+
+	</section>
+
+	<div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+		document.getElementById("cornerBtn").style.display = "block";
+	  } else {
+		document.getElementById("cornerBtn").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+
+	<script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Kayla Whitcher Productions</p>
+	</footer>
+
+</body>
+</html>
